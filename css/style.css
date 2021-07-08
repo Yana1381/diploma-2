@@ -70,8 +70,9 @@
   }
 
   .menu-button {
-    width: 1.4em;
-    height: 1em;
+    left: 90%;
+    width: 40px;
+    height: 25px;
     border: none;
     padding: 0;
     background-color: transparent;
@@ -81,7 +82,7 @@
     cursor: pointer;
   }
 
-  .menu__button:before, .menu__button:after {
+  .menu__button-label:before, .menu__button-label:after {
     content: "";
     width: 100%;
     height: 20%;
@@ -89,10 +90,30 @@
     background-color: #ffffff;
     position: absolute;
     left: 0;
-    position: absolute;
+  }
+
+  .menu__button-label:before {
+    top: 0;
+  }
+
+  .menu__button-label:after {
+    bottom: 0;
+  }
+
+  .menu__button-label {
+    width: 100%;
+    height: 20%;
+    margin-top: -0.1em;
+    border-radius: 5px;
+    background-color: #ffffff;
+    left: 0;
+    top: 50%;
   }
 
 
+  .menu-buttons {
+    width: 30px;
+  }
 
   .menu-list-item:not(:last-child) {
     margin-right: 35px;
@@ -925,8 +946,12 @@
 
   .header-title {
     font-size: 26px;
-    margin-top: 40px;
+    margin-top: 25px;
     padding: 0;
+  }
+
+  .logo {
+    margin: auto;
   }
 
   .logo-img {
