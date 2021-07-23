@@ -84,8 +84,7 @@
   .menu__button-label:before, .menu__button-label:after {
     content: "";
     width: 100%;
-    height: 20%;
-    border-radius: 5px;
+    height: 4px;
     background-color: #ffffff;
     position: absolute;
     left: 0;
@@ -96,17 +95,17 @@
   }
 
   .menu__button-label:after {
-    bottom: 0;
+    bottom: 5%;
   }
 
   .menu__button-label {
     width: 100%;
-    height: 20%;
-    border-radius: 5px;
+    height: 4px;
     background-color: #ffffff;
     left: 0;
-    top: 50%;
+    margin-bottom: 2px;
     display: block;
+
   }
 
 
@@ -585,6 +584,11 @@
     font-family: OpenSans-Bold, sans-serif;
   }
 
+  .product-desc {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
   .product-button:hover {
     background-color: #e7dfc4;
     cursor: pointer;
@@ -861,6 +865,8 @@
 
 .article {
   display: block;
+  border-bottom: solid 2px #eeeeee;
+  padding-bottom: 15px;
 }
 
 .article-group {
@@ -886,16 +892,6 @@
 
 .footer {
   width: 100%;
-}
-
-.article-desc:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: #eeeeee;
-  margin: 15px 0;
-
 }
 
 }
